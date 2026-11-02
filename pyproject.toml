@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bracket-validator-variant22"
+version = "0.1.0"
+description = "Пакет для перевірки збалансованості дужок"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Oleg", email = "student@example.com" }
+]
+
+[project.scripts]
+validator = "validator.validator:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/validator"]
